@@ -20,29 +20,29 @@ const Todo = () => {
 
     if (!todos) return
     addTodo({ name, todo, completed: false })
-    setTodo('')
+    setTodo("")
   }
   return (
     <form className='flex' onSubmit={Add}>
+
       <input type="text"
-        placeholder='Write Todo...'
-        name='todo'
-        value={todo}
-        onChange={(e) => changeHand(e)}
-        className='w-full text-black border font-semibold border-black rounded-l-lg
-       px-3 outline-none duration-150 bg-white/20 py-1.5 placeholder-black'
-      />
-      <input type="text"
-        placeholder='Name...'
+        placeholder='name...'
         name='name'
         value={name}
         onChange={(e) => changeHand(e)}
         className='w-full border text-black font-semibold border-black rounded-l-lg
-       px-3 outline-none duration-150 bg-white/20 py-1.5 placeholder-black'
+       px-3 outline-none duration-150 bg-white/20 py-1.5 placeholder-black dark:placeholder-white'
       />
-
+      <input type="text"
+        placeholder='write todo...'
+        name='todo'
+        value={todo}
+        onChange={(e) => changeHand(e)}
+        className='w-full text-black border font-semibold border-black 
+       px-3 outline-none duration-150 bg-white/20 py-1.5 placeholder-black dark:placeholder-white'
+      />
       <button type="submit" className=' rounded-r-lg
-       px-3 py-1 bg-green-500 text-white shrink-0'>Add</button>
+       px-3 py-1 bg-green-700 text-white font-semibold hover:duration-500 hover:bg-green-500 shrink-0'>Add</button>
     </form>
   )
 }
