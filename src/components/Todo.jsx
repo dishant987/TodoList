@@ -30,7 +30,7 @@ const Todo = () => {
         name='name'
         value={name}
         onChange={(e) => changeHand(e)}
-        className='w-full border text-black font-semibold border-black rounded-l-lg
+        className='w-full border text-black dark:text-white font-semibold border-black rounded-l-lg placeholder:font-normal
        px-3 outline-none duration-150 bg-white/20 py-1.5 placeholder-black dark:placeholder-white'
       />
       <input type="text"
@@ -38,7 +38,7 @@ const Todo = () => {
         name='todo'
         value={todo}
         onChange={(e) => changeHand(e)}
-        className='w-full text-black border font-semibold border-black 
+        className='w-full text-black dark:text-white border font-semibold border-black placeholder:font-normal
        px-3 outline-none duration-150 bg-white/20 py-1.5 placeholder-black dark:placeholder-white'
       />
       <button type="submit" className=' rounded-r-lg

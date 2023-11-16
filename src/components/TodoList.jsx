@@ -35,7 +35,7 @@ function TodoList({ todos }) {
           />
           <input
               type="text"
-              className={`border outline-none w-full bg-transparent rounded-lg ${
+              className={`border outline-none w-full bg-transparent font-semibold rounded-lg ${
                   isTodoEditable ? "border-black/10 px-2" : "border-transparent"
               } ${todos.completed ? "line-through" : ""}`}
               value={todoMsg}
@@ -44,7 +44,7 @@ function TodoList({ todos }) {
           />
           <input
               type="text"
-              className={`border outline-none w-full bg-transparent text-black rounded-lg ${
+              className={`border outline-none w-full font-semibold bg-transparent text-black rounded-lg ${
                   isTodoEditable ? "border-black/10 px-2" : "border-transparent"
               } ${todos.completed ? "line-through" : ""}`}
               value={todoName}
