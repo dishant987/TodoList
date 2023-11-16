@@ -20,7 +20,10 @@ const Todo = () => {
 
     if (!todos) return
     addTodo({ name, todo, completed: false })
-    setTodo("")
+    setTodo({
+      name:'',
+      todo:''
+    })
   }
   return (
     <form className='flex' onSubmit={Add}>
