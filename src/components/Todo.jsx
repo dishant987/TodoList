@@ -16,7 +16,10 @@ const Todo = () => {
 
   const Add = (e) => {
     e.preventDefault();
-    if (!todos) return;
+    if (!todos.name || !todos.todo) {
+      alert("Please fill in the values");
+      return;
+    }
     addTodo({ name, todo, completed: false });
     setTodo({
       name: "",

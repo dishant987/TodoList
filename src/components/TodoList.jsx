@@ -12,8 +12,8 @@ function TodoList({ todos }) {
       updateTodo(todos.id,{...todos,name:todoName,},{...todos,todo:todoMsg})
       setIsTodoEditable(false)
     }
-    console.log("todolist.jsx");
-    console.log(todos);
+    // console.log("todolist.jsx");
+    // console.log(todos);
     const toggleCompleted = ()=>{
       toggleComplete(todos.id)
     }
