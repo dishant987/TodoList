@@ -35,20 +35,20 @@ function TodoList({ todos }) {
           />
           <input
               type="text"
-              className={`border outline-none w-full bg-transparent font-semibold rounded-lg ${
-                  isTodoEditable ? "border-black/10 px-2" : "border-transparent"
-              } ${todos.completed ? "line-through" : ""}`}
-              value={todoMsg}
-              onChange={(e) => setTodoMsg(e.target.value)}
-              readOnly={!isTodoEditable}
-          />
-          <input
-              type="text"
               className={`border outline-none w-full font-semibold bg-transparent text-black rounded-lg ${
                   isTodoEditable ? "border-black/10 px-2" : "border-transparent"
               } ${todos.completed ? "line-through" : ""}`}
               value={todoName}
               onChange={(e) => setTodoName(e.target.value)}
+              readOnly={!isTodoEditable}
+          />
+              <input
+              type="text"
+              className={`border outline-none w-full bg-transparent font-semibold rounded-lg ${
+                  isTodoEditable ? "border-black/10 px-2" : "border-transparent"
+              } ${todos.completed ? "line-through" : ""}`}
+              value={todoMsg}
+              onChange={(e) => setTodoMsg(e.target.value)}
               readOnly={!isTodoEditable}
           />
           {/* Edit, Save Button */}

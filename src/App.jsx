@@ -52,7 +52,6 @@ function App() {
 
   return (
 
-
     <TodoProvider value={{ DarkMode, todos, Theme, addTodo, updateTodo, deleteTodo, toggleComplete }}>
       <div id="dark"  className="min-h-screen py-8 dark:bg-slate-800 ">
         <Navbar />
