@@ -23,6 +23,7 @@ const Todo = () => {
     addTodo({ name, todo, completed: false });
     setTodo({
       name: "",
+      
       todo: "",
     });
   };
